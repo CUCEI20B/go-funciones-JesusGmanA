@@ -1,7 +1,9 @@
 package main
 
 func exchange(x, y *int64) {
-
+	temp := *x
+	*x = *y
+	*y = temp
 }
 
 func Burbuja(s []int64) {
